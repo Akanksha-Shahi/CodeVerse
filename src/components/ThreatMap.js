@@ -31,7 +31,7 @@ const ThreatMap = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAB3UQ1q5nMWfX22KIEGPtPFNV7JRGomHQ">
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={center}
